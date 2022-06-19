@@ -11,23 +11,9 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                if (Session["LoggedinName"] != null)
-                {
-                    lbl.Text = "Welcome Back : &nbsp;" + Session["LoggedinName"].ToString() + "&nbsp;Logged In Time:&nbsp;" + Session["LoggedinTime"].ToString();
-                }
-                else
-                {
-                    Response.Redirect("Login.aspx");
-                }
-            }
+           
         }
 
-        protected void link_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Redirect("Login.aspx");
-        }
+        
     }
 }

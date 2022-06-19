@@ -128,10 +128,8 @@
     <Content Include="master.aspx" />
     <Content Include="masterchild.aspx" />
     <Content Include="masterpage.Master" />
-    <Content Include="HODHome.Master" />
     <Content Include="studenthome.aspx" />
     <Content Include="UserDetails.aspx" />
-    <Content Include="Validator.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -198,13 +196,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="HODHome.Master.cs">
-      <DependentUpon>HODHome.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HODHome.Master.designer.cs">
-      <DependentUpon>HODHome.Master</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
@@ -290,13 +281,6 @@
     </Compile>
     <Compile Include="UserDetails.aspx.designer.cs">
       <DependentUpon>UserDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Validator.aspx.cs">
-      <DependentUpon>Validator.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Validator.aspx.designer.cs">
-      <DependentUpon>Validator.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

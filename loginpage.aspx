@@ -4,15 +4,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        body
-        {
-            background-color: #F3EBF6;
-            font-family: 'Ubuntu' , sans-serif;
-        }
-        
-        .main
+    <title>Login</title>
+
+     <style type="text/css">
+            body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+/*   the main font */
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+}
+           .main
         {
             background-color: #FFFFFF;
             width: 400px;
@@ -21,11 +28,15 @@
             border-radius: 1.5em;
             box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
         }
+         
+
+        
+      
         
         .sign
         {
             padding-top: 40px;
-            color: #8C55AA;
+            color: #0094ff;
             font-family: 'Ubuntu' , sans-serif;
             font-weight: bold;
             font-size: 23px;
@@ -38,7 +49,7 @@
             font-weight: 700;
             font-size: 14px;
             letter-spacing: 1px;
-            background: rgba(136, 126, 126, 0.04);
+            background: #E3FDF5;
             padding: 10px 20px;
             border: none;
             border-radius: 20px;
@@ -63,8 +74,8 @@
             color: rgb(38, 50, 56);
             font-weight: 700;
             font-size: 14px;
-            letter-spacing: 1px;
-            background: rgba(136, 126, 126, 0.04);
+            letter-spacing: 2px;
+            background: #E3FDF5;
             padding: 10px 20px;
             border: none;
             border-radius: 20px;
@@ -88,8 +99,8 @@
         {
             cursor: pointer;
             border-radius: 5em;
-            color: #fff;
-            background: linear-gradient(to right, #9C27B0, #E040FB);
+            color:  #00ffff;
+           background: linear-gradient(to right, #00ffff, #E040FB);
             border: 0;
             padding-left: 40px;
             padding-right: 40px;
@@ -104,23 +115,23 @@
         .forgot
         {
             text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-            color: #E1BEE7;
+            color: #E040FB;
             padding-top: 15px;
         }
         
+
         a
         {
             text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-            color: #E1BEE7;
+            color: #E040FB;
             text-decoration: none;
         }
 
-
-        @media (max-width: 600px) {
-            .main {
-                border-radius: 0px;
-            }
-        }
+         @media (max-width: 600px) {
+             .main {
+                 border-radius: 0px;
+             }
+         }
     </style>
 </head>
 <body>
@@ -129,7 +140,7 @@
         <p class="sign" align="center">
             Sign in</p>
         <asp:TextBox ID="txtemail" runat="server" CssClass="un" align="center" placeholder="Username"></asp:TextBox>
-        <asp:TextBox ID="txtpwd" runat="server" CssClass="pass" align="center" placeholder="password"></asp:TextBox>
+        <asp:TextBox ID="txtpwd" runat="server" CssClass="pass" align="center" placeholder="Password"></asp:TextBox>
         <a class="submit" align="center">
             <asp:Button ID="btnlogin" runat="server" Text="Sign In" 
             onclick="btnlogin_Click" /></a>
@@ -138,6 +149,7 @@
         <p class="forgot" align="center">
             <a href="#">Forgot Password?</a></p>
     </div>
+    
     </form>
 </body>
 </html>
