@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="WebApplication2.masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <style>
+            td{
+                padding:0px 50px 0px 50px;
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <table style="width:100%;text-align:center;background:#ffd800" >
+            <tr>
+                <td>
+                    WeWelcome to VNR WEB APPLICATION
+                </td>
+            </tr>
+        </table>
+        <table style="background-color:antiquewhite; width: 1402px;">
+            <tr>
+                <td>
+                 
+                    <a href="masterchild.aspx">Home</a>
+                </td>
+                <td>
+                    
+                    <a href="#">Request MArks</a>
+                </td>
+                <td>
+                    
+                    <a href="#">Library</a>
+                </td>
+                <td>
+                    
+                    <a href="loginpage.aspx">Logout</a>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div style="border-style:solid; padding: 20px; margin: 20px">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
